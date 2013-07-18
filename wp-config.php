@@ -29,8 +29,12 @@ if ( !defined('ABSPATH') )
 /* This is where we define the new wp-content folder	*/
 define('WP_CONTENT_DIR', ABSPATH.'../wp-content');
 
-if(file_exists('../config.local.php')) { // Fail gracefully
-	include_once('../config.local.php');	
+define('DB_HOST', 'localhost');		
+
+$local_config_path = ABSPATH.'../config.local.php';
+
+if(file_exists($local_config_path)) { // Fail gracefully
+	include_once($local_config_path);	
 } else {
 	switch($_SERVER["SERVER_ADDR"]) {
 		case "95.138.186.63": // staging
