@@ -1,4 +1,4 @@
-1. Make a copy of config.local.sample.php and amend your DB details
+1. Copy config.local.sample.php to config.local.php and amend your DB details
 2. Copy wp-config.php to wordpress/wp-config.php
 3. Change the origin to your project origin 
    git remote set-url origin http://logistik.beanstalkapp.com/yourgitrepo.git
