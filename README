@@ -1,0 +1,2 @@
+1. Make a copy of config.local.sample.php and amend your DB details
+2. Copy wp-config.php to wordpress/wp-config.php
